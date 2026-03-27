@@ -44,3 +44,6 @@ Wire format (all fields little-endian):
 ```
 The client reads the header first (16 bytes), allocates a page,
 // receives exactly patch_size bytes into it, then installs the detour.
+
+## Version 2
+Uses HMAC SHA256 to verify the server's signature before applying the patch.
